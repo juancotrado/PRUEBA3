@@ -37,6 +37,7 @@ switch ($_GET["op"]) {
 		break;
 
     case 'listar':
+
 		$rspta=$departamento->listar();
 		$data=Array();
 
@@ -45,7 +46,7 @@ switch ($_GET["op"]) {
             "0"=>'<button class="btn btn-warning btn-xs" onclick="mostrar('.$reg->iddepartamento.')"><i class="fa fa-pencil"></i></button>'.' '.'<button class="btn btn-danger btn-xs" onclick="desactivar('.$reg->iddepartamento.')"><i class="fa fa-close"></i></button>',
             "1"=>$reg->nombre,
             "2"=>$reg->descripcion,
-            "3"=>$reg->fechacreada
+            
               );
 		}
 		$results=array(
