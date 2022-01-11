@@ -1,0 +1,92 @@
+
+.cabe{
+     
+    background: url(https://coclatours.com/wp-content/uploads/2019/10/cabecera-copia.jpg) no-repeat center top;
+    font-family: arial ;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 30%;
+}
+h4{
+    text-align: center;
+}
+h3{
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+.wrap{
+	width: 800px;
+	max-width: 50%;
+	margin: 5px auto;
+}
+
+ul.tabs{
+	width: 100%;
+	background: #363636;
+	list-style: none;
+	display: flex;
+}
+
+ul.tabs li{
+	width: 50%;
+}
+
+ul.tabs li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	display: block;
+	padding: 10px 0px;
+}
+
+.active{
+	background: #2587c0;
+}
+
+.secciones{
+	width: 100%;
+	height: 350px;
+	background: #fff;
+}
+.formulariop{
+	padding-left: 100px;
+	padding-right: 0px;
+}
+.secciones article{
+	width: 80%;
+	border-color: rgb(1, 12, 12);
+	
+}
+
+.secciones article p{
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px){
+	ul.tabs li a{
+		padding: 0px 0px;
+	}
+
+	ul.tabs li a .tab-text{
+		display: none;
+	}
+
+	.secciones article{
+		padding: 0px;
+	}
+}
